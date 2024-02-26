@@ -19,11 +19,11 @@
 
       packages.${system}.default = pkgs.stdenv.mkDerivation {
         name = "cinc";
-        src = cinc.inputs.cinc-workstation;
-        buildInputs = [ cinc.packages.${system}.cinc-workstation ];
+        src = cinc;
+        # buildInputs = [ cinc.packages.${system}.cinc-workstation ];
         installPhase = ''
           mkdir -p $out/bin
-          cp ${cinc.packages.${system}.cinc-workstation}/bin/cinc $out/bin
+          cp -r ${cinc.packages.${system}.cinc-workstation}/bin/* $out/bin
         '';
       };
     };
