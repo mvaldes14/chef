@@ -13,9 +13,9 @@
     in
     {
       devShells.${system}.default = pkgs.mkShell {
-        buildInputs = [ cinc.packages.${system}.cinc-workstation ];
+        buildInputs = [ cinc.packages.${system}.cinc-workstation-sources cinc.packages.${system}.cinc-workstation-run cinc.packages.${system}.cinc-workstation ];
         shellHook = ''
-          cinc --version
+          ktichen list
         '';
       };
     };
