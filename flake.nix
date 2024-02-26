@@ -12,18 +12,10 @@
       pkgs = import nixpkgs { inherit system; };
     in
     {
-
       devShells.${system}.default = pkgs.mkShell {
-        buildInputs = [ self.packages.${system}.default ];
-      };
-
-      packages.${system}.default = pkgs.stdenv.mkDerivation {
-        name = "cinc";
-        src = cinc;
-        # buildInputs = [ cinc.packages.${system}.cinc-workstation ];
-        installPhase = ''
-          mkdir -p $out/bin
-          cp -r ${cinc.packages.${system}.cinc-workstation}/bin/* $out/bin
+        buildInputs = [ cinc.packages.${system}.cinc-workstation ];
+        shellHook = ''
+          cinc --version
         '';
       };
     };
