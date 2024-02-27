@@ -13,10 +13,7 @@
     in
     {
       devShells.${system}.default = pkgs.mkShell {
-        buildInputs = [ cinc.packages.${system}.cinc-workstation-run ];
-        shellHook = ''
-          ktichen list
-        '';
+        buildInputs = [ cinc.packages.${system}.cinc-workstation pkgs.ruby pkgs.rubocop ];
       };
     };
 }

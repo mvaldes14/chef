@@ -4,9 +4,10 @@
 #
 # Copyright:: 2021, The Authors, All Rights Reserved.
 
-
-test_custom_resource_pkg "apache"
-
+pkg_installer "apache2" do
+  enable false
+  action :install
+end
 
 directory '/tmp/test_dir' do
     owner 'root'

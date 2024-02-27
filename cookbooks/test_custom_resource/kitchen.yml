@@ -1,14 +1,14 @@
 driver:
-  name: vagrant
+  name: dokken
 provisioner:
-  name: chef_zero
-  chef_omnibus_root: /opt/chef
+  name: dokken
+transport:
+  name: dokken
 verifier:
   name: inspec
 platforms:
   - name: ubuntu-20.04
   - name: centos-8
-  - name: bento/ubuntu-20.04
 suites:
   - name: default
     verifier:
