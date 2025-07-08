@@ -1,0 +1,112 @@
+{
+  "nodes": {
+    "cinc": {
+      "inputs": {
+        "cinc-workstation": "cinc-workstation",
+        "flake-parts": "flake-parts",
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1726483702,
+        "narHash": "sha256-QAKKlSK+OXi6hxv7BulZFjdAGzHNCQE/61kgkeFNBWs=",
+        "owner": "kristofvandam",
+        "repo": "flake-cinc-workstation",
+        "rev": "02575e92e7703683d31341bdb7774af1a8be157d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kristofvandam",
+        "repo": "flake-cinc-workstation",
+        "type": "github"
+      }
+    },
+    "cinc-workstation": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-GW5qV8TeojvkwANa8/GscQTvoKXnPPnRD9r7D2SVlLI=",
+        "type": "file",
+        "url": "http://downloads.cinc.sh/files/stable/cinc-workstation/24.8.1068/debian/11/cinc-workstation_24.8.1068-1_amd64.deb"
+      },
+      "original": {
+        "type": "file",
+        "url": "http://downloads.cinc.sh/files/stable/cinc-workstation/24.8.1068/debian/11/cinc-workstation_24.8.1068-1_amd64.deb"
+      }
+    },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib"
+      },
+      "locked": {
+        "lastModified": 1704152458,
+        "narHash": "sha256-DS+dGw7SKygIWf9w4eNBUZsK+4Ug27NwEWmn2tnbycg=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "88a2cd8166694ba0b6cb374700799cec53aef527",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1704194953,
+        "narHash": "sha256-RtDKd8Mynhe5CFnVT8s0/0yqtWFMM9LmCzXv/YKxnq4=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "bd645e8668ec6612439a9ee7e71f7eac4099d4f6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-lib": {
+      "locked": {
+        "dir": "lib",
+        "lastModified": 1703961334,
+        "narHash": "sha256-M1mV/Cq+pgjk0rt6VxoyyD+O8cOUiai8t9Q6Yyq4noY=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b0d36bd0a420ecee3bc916c91886caca87c894e9",
+        "type": "github"
+      },
+      "original": {
+        "dir": "lib",
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1739020877,
+        "narHash": "sha256-mIvECo/NNdJJ/bXjNqIh8yeoSjVLAuDuTUzAo7dzs8Y=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "a79cfe0ebd24952b580b1cf08cd906354996d547",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "cinc": "cinc",
+        "nixpkgs": "nixpkgs_2"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
